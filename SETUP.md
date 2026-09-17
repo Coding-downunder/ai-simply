@@ -6,8 +6,8 @@ You are Claude Code. The user pasted a prompt asking you to follow this file. In
 
 | Skill | What it does | Author | Licence |
 |---|---|---|---|
-| grill-me (+ grilling, which it uses) | Grills the user on a plan before anything gets built | Matt Pocock | MIT |
 | handoff | Packs a long chat into a note a fresh chat can pick up | Matt Pocock | MIT |
+| grill-me (+ grilling, which it uses) | Grills the user on a plan before anything gets built | Matt Pocock | MIT |
 | humanizer | Rewrites text that sounds like AI wrote it | Siqi Chen | MIT |
 | unlazy | Writes its checks first and proves each one before saying "done" | Leon Lin | MIT |
 | teach | A tutor that keeps track of what the user has learned | Matt Pocock | MIT |
@@ -36,8 +36,8 @@ Nothing here installs hooks, changes settings, or runs code at install time. It 
    - which skills are installed
    - to start a new Claude Code session so the skills load
    - how to use each, one line each:
-     - `/grill-me` then describe a plan
      - `/handoff` when a chat gets long, then paste the note into a new chat
+     - `/grill-me` then describe a plan
      - `/humanizer` then paste the text
      - `/unlazy` before a big multi-step task
      - `/teach` then say what you want to learn

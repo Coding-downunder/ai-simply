@@ -14,8 +14,8 @@ That installs all five. Only want one? Add it to the end, for example `Install h
 
 | Skill | What it does | Author |
 |---|---|---|
-| grill-me | Grills you on a plan before anything gets built | [Matt Pocock](https://github.com/mattpocock/skills) |
 | handoff | Packs a long chat into a note a fresh chat can pick up | [Matt Pocock](https://github.com/mattpocock/skills) |
+| grill-me | Grills you on a plan before anything gets built | [Matt Pocock](https://github.com/mattpocock/skills) |
 | humanizer | Rewrites text that sounds like AI wrote it | [Siqi Chen](https://github.com/blader/humanizer) |
 | unlazy | Writes its checks first, proves each one before "done" | [Leon Lin](https://github.com/Leonxlnx/unlazy) |
 | teach | A tutor that remembers where you're up to | [Matt Pocock](https://github.com/mattpocock/skills) |
