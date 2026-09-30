@@ -29,8 +29,9 @@ default when it asks.
 
 - **For one session** (Claude Code, when all four are installed): type `/the-professor`,
   `/the-operator`, `/the-assistant` or `/the-short-version`.
-- **Permanently**: paste the install prompt again with a different name. It swaps the
-  block in your rules file and leaves everything else alone.
+- **Permanently**: say "switch to The Operator" in any session. The AI swaps the block
+  in your rules file and leaves everything else alone. Pasting the install prompt again
+  with a different name does the same.
 
 ## Make it yours
 

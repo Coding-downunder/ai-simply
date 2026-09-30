@@ -30,6 +30,7 @@ Nothing here installs hooks, changes settings, or runs code. It copies text file
    ```
    <!-- ai-simply character: the-short-version -->
    ...full contents of the character file...
+   To switch character: say "switch to <name>". The other characters are saved in ~/.claude/characters/ (or ~/.codex/characters/). Replace everything between these markers with that file, nothing else.
    <!-- end ai-simply character -->
    ```
 
@@ -56,5 +57,5 @@ Nothing here installs hooks, changes settings, or runs code. It copies text file
    - to start a new session so it loads
    - how to switch:
      - **For one session (Claude Code):** type `/the-professor`, `/the-operator`, `/the-assistant` or `/the-short-version`
-     - **Permanently (both tools):** paste the install prompt again with the new name, for example `Fetch https://raw.githubusercontent.com/Coding-downunder/ai-simply/main/characters/SETUP.md and follow it. Default: The Operator.`
+     - **Permanently (both tools):** say "switch to The Operator" in any session, or paste the install prompt again with the new name, for example `Fetch https://raw.githubusercontent.com/Coding-downunder/ai-simply/main/characters/SETUP.md and follow it. Default: The Operator.`
    - that they can open the character file and change any line. It's their rules file now.
