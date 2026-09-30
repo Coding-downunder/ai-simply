@@ -18,6 +18,7 @@ the people whose work I build on.
 |---|---|---|
 | [`operating-system/`](operating-system/) | The rules file my agents read every session, the model routing, the delegation safety rule, five pinned agents | Me |
 | [`playbooks/`](playbooks/) | Six short method notes. Gates and evidence, rollout register, structural guards, secrets, parallel sessions, writing a skill | Me |
+| [`characters/`](characters/) | Four ready-made rules files. The Assistant, The Short Version, The Professor, The Operator. Pick one, one paste installs it | Me |
 | [`skills/`](skills/) | Five open-source skills I recommend to anyone starting out, copied unchanged with their licenses | Their authors, see [CREDITS.md](CREDITS.md) |
 | [`SETUP.md`](SETUP.md) | The one-paste installer for those five skills | Me |
 
@@ -39,10 +40,15 @@ Only want one? Add it to the end, for example `Install humanizer only.`
 | unlazy | Writes its checks first, proves each one before "done" | [Leon Lin](https://github.com/Leonxlnx/unlazy) |
 | teach | A tutor that remembers where you're up to | [Matt Pocock](https://github.com/mattpocock/skills) |
 
-**Want the rules file instead?** Copy [`operating-system/CLAUDE.md`](operating-system/CLAUDE.md)
-into your project root as `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex and most
-other agents). Read it first and cut what isn't you. It is written for one person's
-way of working, and that person is me.
+**Want a rules file?** Four characters, one paste each, in [`characters/`](characters/):
+
+```
+Fetch https://raw.githubusercontent.com/Coding-downunder/ai-simply/main/characters/SETUP.md and follow it. Default: The Short Version.
+```
+
+The full file my own agents run under is at
+[`operating-system/CLAUDE.md`](operating-system/CLAUDE.md). Read it first and cut what
+isn't you. It is written for one person's way of working, and that person is me.
 
 Before installing any skill, from here or anywhere, read it. A skill is instructions
 your agent follows with every permission you have given it.
