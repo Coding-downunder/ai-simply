@@ -17,26 +17,26 @@ Nothing here installs hooks, changes settings, or runs code. It copies text file
 
 ## Steps
 
-1. **Tell the user** in two lines what you're about to do: copy the character files onto their machine and set one as the default. If the user named a character in their prompt, that one is the default. If they didn't, show the table and ask which one. If they said "all", install all four and ask which one is the default.
+1. **Tell the user** in two lines what you're about to do: copy the character files onto their machine and set one as the default. If the user named a character in their prompt, that one is the default. If they said "all" or "all four", copy all four. If they said "all" without naming a default, ask which one is the default. If they named neither, show the table and ask which one they want. Never ask a question the prompt already answered.
 
 2. **Download** this repo to a temporary folder:
    `git clone --depth 1 https://github.com/Coding-downunder/ai-simply.git`
    If `git` isn't available, download `https://github.com/Coding-downunder/ai-simply/archive/refs/heads/main.zip` and unzip it.
 
-3. **Copy** the chosen character files from `characters/` into `~/.claude/characters/` (Claude Code) or `~/.codex/characters/` (Codex). Create the folder if needed. On Windows, `~` is `%USERPROFILE%`.
+3. **Copy** the chosen character files from `characters/` into `~/.claude/characters/` (Claude Code) or `~/.codex/characters/` (Codex). Create the folder if needed. On Windows, `~` is `%USERPROFILE%`, so the folder is `%USERPROFILE%\.claude\characters\`.
 
 4. **Set the default.** Open the user's global rules file: `~/.claude/CLAUDE.md` for Claude Code, `~/.codex/AGENTS.md` for Codex. Create it if it doesn't exist. Add this block, filled with the full text of the chosen character:
 
    ```
    <!-- ai-simply character: the-short-version -->
    ...full contents of the character file...
-   To switch character: say "switch to <name>". The other characters are saved in ~/.claude/characters/ (or ~/.codex/characters/). Replace everything between these markers with that file, nothing else.
+   To switch character: say "switch to <name>". The other characters are saved in ~/.claude/characters/ (or ~/.codex/characters/). Replace this whole block, from the opening marker to the closing marker, with a fresh block for that file, and put the new file name in the opening marker. Touch nothing outside the markers.
    <!-- end ai-simply character -->
    ```
 
    If the block already exists, replace what's between the markers. Never touch anything outside the markers. If the file already has rules that clash with the character, tell the user in one line and let them decide.
 
-5. **Claude Code only, if more than one character was installed:** also copy each one into `~/.claude/skills/<file-name-without-.md>/SKILL.md`, with this at the top of each:
+5. **Claude Code only, if more than one character file was copied in step 3:** also copy each one into `~/.claude/skills/<file-name-without-.md>/SKILL.md`, with this at the top of each:
 
    ```
    ---
