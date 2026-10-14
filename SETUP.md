@@ -1,6 +1,6 @@
-# Setup: 5 free skills for Claude Code
+# Setup: 5 free skills for Claude Code or Codex
 
-You are Claude Code. The user pasted a prompt asking you to follow this file. Install the skills below for them, step by step, and keep your messages short and plain.
+You are Claude Code or Codex. The user pasted a prompt asking you to follow this file. Each skill folder carries both formats: `SKILL.md` for Claude Code and `agents/openai.yaml` for Codex, so the same folder works in either tool. Install the skills below for them, step by step, and keep your messages short and plain.
 
 ## What gets installed
 
@@ -18,7 +18,7 @@ Nothing here installs hooks, changes settings, or runs code at install time. It 
 
 1. **Tell the user** in two lines what you're about to install (the table above) and that it copies folders into their Claude skills folder. If the user already named specific skills in their prompt, install only those (always include `grilling` with `grill-me`).
 
-2. **Find the skills folder:** `~/.claude/skills/` (on Windows `%USERPROFILE%\.claude\skills\`). Create it if it doesn't exist.
+2. **Find the skills folder.** Claude Code: `~/.claude/skills/`. Codex: `~/.codex/skills/`. On Windows `~` is `%USERPROFILE%`. Create it if it doesn't exist. If you are not sure which tool you are, you are the one whose folder exists.
 
 3. **Check for clashes.** If a folder with the same name already exists there, don't overwrite it. List the clashes and ask the user whether to replace or skip each one.
 
@@ -34,8 +34,8 @@ Nothing here installs hooks, changes settings, or runs code at install time. It 
 
 8. **Finish** by telling the user:
    - which skills are installed
-   - to start a new Claude Code session so the skills load
-   - how to use each, one line each:
+   - to start a new session so the skills load
+   - how to use each, one line each. In Claude Code type the slash name. In Codex type `$` and the name, or just ask for it by name ("use the handoff skill"):
      - `/handoff` when a chat gets long, then paste the note into a new chat
      - `/grill-me` then describe a plan
      - `/humanizer` then paste the text

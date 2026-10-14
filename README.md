@@ -20,11 +20,11 @@ the people whose work I build on.
 | [`playbooks/`](playbooks/) | Six short method notes. Gates and evidence, rollout register, structural guards, secrets, parallel sessions, writing a skill | Me |
 | [`characters/`](characters/) | Four ready-made rules files. The Assistant, The Short Version, The Professor, The Operator. Pick one, one paste installs it | Me |
 | [`skills/`](skills/) | Five open-source skills I recommend to anyone starting out, copied unchanged with their licenses | Their authors, see [CREDITS.md](CREDITS.md) |
-| [`SETUP.md`](SETUP.md) | The one-paste installer for those five skills | Me |
+| [`SETUP.md`](SETUP.md) | The one-paste installer for those five skills, Claude Code or Codex | Me |
 
 ## Start here (30 seconds)
 
-**Five skills worth installing first.** Paste this into a new Claude Code session:
+**Five skills worth installing first.** Paste this into a new Claude Code or Codex session:
 
 ```
 Fetch https://raw.githubusercontent.com/Coding-downunder/ai-simply/main/SETUP.md and follow it.
